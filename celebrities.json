@@ -1,0 +1,222 @@
+[
+        {
+    "id": 1,
+
+    "name": "Taylor Swift",
+    "profession": "Singer",
+    "category": "Singer",
+    "country": "USA",
+    "icon": "🎤",
+    "photo": "image/taylor swift.jpg"
+},
+
+
+    {
+        "id": 2,
+
+        "name": "Ariana Grande",
+        "profession": "Singer & Actress",
+        "category": "Singer",
+        "country": "USA",
+        "icon": "🎤",
+        "photo": "image/Ariana.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Jungkook",
+        "profession": "Singer & Performer",
+        "category": "Singer",
+        "country": "South Korea",
+        "icon": "🎵",
+        "photo": "image/jjk.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Zendaya",
+        "profession": "Actress & Singer",
+        "category": "Actress",
+        "country": "USA",
+        "icon": "🎬",
+        "photo": "image/Zendaya.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Emma Watson",
+        "profession": "Actress",
+        "category": "Actress",
+        "country": "UK",
+        "icon": "✨",
+        "photo": "image/Emma.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Tom Holland",
+        "profession": "Actor",
+        "category": "Actor",
+        "country": "UK",
+        "icon": "🎭",
+        "photo": "image/Tom Holland.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Ryan Reynolds",
+        "profession": "Actor",
+        "category": "Actor",
+        "country": "Canada",
+        "icon": "🎬",
+        "photo": "image/Ryan Reynolds.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Dua Lipa",
+        "profession": "Singer & Model",
+        "category": "Singer",
+        "country": "UK",
+        "icon": "🎤",
+        "photo": "image/Dua Lipa.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Lisa",
+        "profession": "Singer & Dancer",
+        "category": "K-pop",
+        "country": "Thailand",
+        "icon": "💃",
+        "photo": "image/Lisa.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Robert Downey Jr.",
+        "profession": "Actor",
+        "category": "Actor",
+        "country": "USA",
+        "icon": "🎭",
+        "photo": "image/Robert Downey Jr.jpg"
+    },
+    {
+    "id": 11,
+    "name": "Billie Eilish",
+    "profession": "Singer & Songwriter",
+    "category": "Singer",
+    "country": "USA",
+    "icon": "🎤",
+    "photo": "image/Billie eilish.jpg"
+},
+{
+    "id": 12,
+    "name": "Cha Eun-woo",
+    "profession": "Singer & Actor",
+    "category": "K-pop",
+    "country": "South Korea",
+    "icon": "🎤",
+    "photo": "image/Cha Eun Woo.jpg"
+},
+{
+    "id": 13,
+    "name": "Dwayne Johnson",
+    "profession": "Actor & Wrestler",
+    "category": "Actor",
+    "country": "USA",
+    "icon": "🎬",
+    "photo": "image/Dwayne Johnson.jpg"
+},
+{
+    "id": 14,
+    "name": "Jackie Chan",
+    "profession": "Actor & Martial Artist",
+    "category": "Actor",
+    "country": "Hong Kong",
+    "icon": "🥋",
+    "photo": "image/Jackie Chan.jpg"
+},
+{
+    "id": 15,
+    "name": "Jennie",
+    "profession": "Singer & Rapper",
+    "category": "K-pop",
+    "country": "South Korea",
+    "icon": "🎤",
+    "photo": "image/Jennie.jpg"
+},
+{
+    "id": 16,
+    "name": "Jisoo",
+    "profession": "Singer & Actress",
+    "category": "K-pop",
+    "country": "South Korea",
+    "icon": "🎤",
+    "photo": "image/Jisoo.jpg"
+},
+{
+    "id": 17,
+    "name": "Justin Bieber",
+    "profession": "Singer & Songwriter",
+    "category": "Singer",
+    "country": "Canada",
+    "icon": "🎤",
+    "photo": "image/Justin Bieber.jpg"
+},
+{
+    "id": 18,
+    "name": "Lee Dong Wook",
+    "profession": "Actor & Model",
+    "category": "Actor",
+    "country": "South Korea",
+    "icon": "🎬",
+    "photo": "image/LeeDongwook.jpg"
+},
+{
+    "id": 19,
+    "name": "Leonardo DiCaprio",
+    "profession": "Actor & Producer",
+    "category": "Actor",
+    "country": "USA",
+    "icon": "🎬",
+    "photo": "image/Leonardo DiCaprio.jpg"
+},
+{
+    "id": 20,
+    "name": "Margot Robbie",
+    "profession": "Actress & Producer",
+    "category": "Actress",
+    "country": "Australia",
+    "icon": "🎬",
+    "photo": "image/Margot Robbie.jpg"
+},
+{
+    "id": 21,
+    "name": "Rose",
+    "profession": "Singer & Dancer",
+    "category": "K-pop",
+    "country": "South Korea",
+    "icon": "🎤",
+    "photo": "image/Rose.jpg"
+},
+{
+    "id": 22,
+    "name": "Sabrina Carpenter",
+    "profession": "Singer & Actress",
+    "category": "Singer",
+    "country": "USA",
+    "icon": "🎤",
+    "photo": "image/sabrina carpenter.jpg"
+},
+{
+    "id": 23,
+    "name": "Selena Gomez",
+    "profession": "Singer & Actress",
+    "category": "Singer",
+    "country": "USA",
+    "icon": "🎤",
+    "photo": "image/Selena.jpg"
+},
+{
+    "id": 24,
+    "name": "Kim Ji-won",
+    "profession": "Actress",
+    "category": "Actress",
+    "country": "South Korea",
+    "icon": "🎬",
+    "photo": "image/kim ji won.jpg"
+}
+]

@@ -1,0 +1,456 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <title>Celebrity Fan Hub</title> 
+ 
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+ 
+<body> 
+ 
+    <!-- HEADER --> 
+    <header> 
+        <nav> 
+ 
+            <div class="logo"> 
+                Celebrity Fan Hub 
+            </div> 
+ 
+            <ul> 
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#celebrities">Celebrities</a></li> 
+                <li><a href="#news">News</a></li> 
+                <li><a href="#gallery">Gallery</a></li> 
+                <li><a href="#events">Events</a></li> 
+                <li><a href="#fan-zone">Fan Zone</a></li> 
+            </ul> 
+ 
+            <!-- DARK / LIGHT MODE --> 
+            <div class="theme-toggle"> 
+ 
+                <span id="themeIcon">🌙</span> 
+ 
+                <label class="switch"> 
+                    <input type="checkbox" id="themeToggle"> 
+                    <span class="slider"></span> 
+                </label> 
+ 
+            </div> 
+ 
+        </nav> 
+    </header> 
+ 
+ 
+    <main> 
+ 
+        <!-- HOME --> 
+        <section id="home" class="hero"> 
+            <div class="stars"></div>
+            <div class="hero-content"> 
+ 
+                <p>WELCOME TO</p> 
+ 
+                <h1> 
+                    Celebrity 
+                    <span>Fan Hub</span> 
+                </h1> 
+ 
+                <h2> 
+                    Your Ultimate Celebrity Destination 
+                </h2> 
+ 
+                <p> 
+                    Discover your favorite celebrities, 
+                    latest news, amazing photos and exciting 
+                    events all in one place. 
+                </p> 
+ 
+                <a href="#celebrities" class="button"> 
+                    Explore Celebrities 
+                </a> 
+ 
+            </div> 
+ 
+        </section> 
+ 
+ 
+        <!-- CELEBRITIES --> 
+        <section id="celebrities" class="section"> 
+ 
+            <h2>Celebrity Directory</h2> 
+ 
+            <p class="section-description"> 
+                Discover your favorite celebrities from around the world. 
+            </p> 
+ 
+            <div class="celebrity-search"> 
+ 
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="🔍 Search celebrities..." 
+                > 
+ 
+            </div> 
+ 
+ 
+            <div class="category-filters"> 
+ 
+                <button class="filter-button active" data-category="All"> 
+                    All 
+                </button> 
+ 
+                <button class="filter-button" data-category="Singer"> 
+                    Singers 
+                </button> 
+ 
+                <button class="filter-button" data-category="Actor"> 
+                    Actors 
+                </button> 
+ 
+                <button class="filter-button" data-category="Actress"> 
+                    Actresses 
+                </button> 
+ 
+                <button class="filter-button" data-category="K-pop"> 
+                    K-pop 
+                </button> 
+ 
+                <button class="filter-button" id="allCelebritiesButton"> 
+                    All Celebrities 
+                </button> 
+ 
+                <button class="filter-button favorites-filter" id="favoritesButton"> 
+                    ❤️ My Favorites 
+                </button> 
+ 
+            </div> 
+ 
+ 
+            <div class="cards" id="celebrityCards"> 
+            </div> 
+ 
+            <p id="resultCount" class="result-count"></p> 
+ 
+        </section> 
+ 
+ 
+        <!-- NEWS --> 
+        <section id="news" class="section"> 
+ 
+            <h2>Latest Celebrity News</h2> 
+ 
+            <p class="section-description"> 
+                Stay updated with the latest celebrity stories and events.
+                </p> 
+ 
+            <div class="news-grid" id="newsContainer"> 
+            </div> 
+ 
+        </section> 
+ 
+ 
+        <!-- GALLERY --> 
+        <section id="gallery" class="section"> 
+ 
+            <h2>Trending Gallery</h2> 
+ 
+            <p class="section-description"> 
+                Explore photos of your favorite celebrities. 
+            </p> 
+ 
+            <div class="gallery" id="galleryContainer"> 
+            </div> 
+ 
+        </section> 
+ 
+ 
+        <!-- EVENTS --> 
+        <section id="events" class="section"> 
+ 
+            <h2>Upcoming Events</h2> 
+ 
+            <div class="event-search"> 
+ 
+                <input 
+                    type="text" 
+                    id="eventSearchInput" 
+                    placeholder="🔍 Search events..." 
+                > 
+ 
+            </div> 
+ 
+ 
+            <div class="event-filters"> 
+ 
+                <button class="event-filter active" data-category="All"> 
+                    All 
+                </button> 
+ 
+                <button class="event-filter" data-category="Music"> 
+                    🎵 Music 
+                </button> 
+ 
+                <button class="event-filter" data-category="Movies"> 
+                    🎬 Movies 
+                </button> 
+ 
+                <button class="event-filter" data-category="TV"> 
+                    📺 TV 
+                </button> 
+ 
+                <button class="event-filter" data-category="K-pop"> 
+                    💜 K-pop 
+                </button> 
+ 
+                <button class="event-filter" data-category="Festival"> 
+                    🌎 Festivals 
+                </button> 
+ 
+            </div> 
+ 
+ 
+            <p class="section-description"> 
+                Discover exciting celebrity events and fan experiences. 
+            </p> 
+ 
+            <div class="events-grid" id="eventsContainer"> 
+            </div> 
+ 
+        </section> 
+ 
+ 
+        <!-- FAN ZONE --> 
+        <section id="fan-zone" class="fan-zone"> 
+ 
+            <h2>Join the Fan Zone ❤️</h2> 
+ 
+            <p> 
+                Share your favorite celebrity moments 
+                and connect with fans around the world. 
+            </p> 
+ 
+            <button> 
+                Join Fan Zone 
+            </button> 
+ 
+        </section> 
+ 
+    </main> 
+ 
+ 
+    <!-- FOOTER --> 
+    <footer> 
+ 
+        <h3>⭐️ Celebrity Fan Hub</h3> 
+ 
+        <p> 
+            Your ultimate destination for celebrity fans. 
+        </p> 
+ 
+        <p> 
+            © 2026 Celebrity Fan Hub 
+        </p> 
+ 
+    </footer> 
+ 
+ 
+    <!-- PROFILE POPUP --> 
+    <div id="profileModal" class="profile-modal"> 
+ 
+        <div class="profile-modal-content"> 
+ 
+            <button id="closeProfile" class="close-profile"> 
+                ✕ 
+            </button> 
+ 
+            <div id="profileIcon" class="profile-icon"> 
+                ⭐️ 
+            </div> 
+ 
+            <h2 id="profileName"> 
+                Celebrity Name 
+            </h2> 
+ 
+            <p id="profileProfession"> 
+                Profession 
+            </p> 
+ 
+            <p id="profileCategory"> 
+                Category 
+            </p> 
+ 
+            <p id="profileCountry"> 
+                Country 
+            </p> 
+ 
+            <p id="profileBio" class="profile-bio"> 
+                Biography 
+            </p> 
+ 
+            <button id="profileFavorite" class="profile-favorite"> 
+                🤍 Favorite 
+            </button> 
+ 
+        </div> 
+ 
+    </div> 
+
+    <!-- FAN ZONE MODAL (2-STEP) -->
+<div id="fanZoneModal" class="fan-zone-modal">
+    <div class="fan-zone-container">
+        <button id="closeFanZone" class="close-fan-zone">✕</button>
+
+        <!-- STEP 1: Registration Form -->
+        <div id="fanStep1" class="fan-step-content">
+            <div class="fan-zone-header">
+                <h2>Join the Fan Zone ❤️</h2>
+                <p>Enter your details to access the exclusive community!</p>
+            </div>
+            <form id="fanLoginForm" class="fan-login-form">
+                <input type="text" id="loginName" placeholder="Your Name" required>
+                <input type="email" id="loginEmail" placeholder="Your Email" required>
+                <button type="submit" class="submit-fan-zone">Join Now 🚀</button>
+            </form>
+        </div>
+
+        <!-- STEP 2: Community Dashboard (Initial Hidden) -->
+        <div id="fanStep2" class="fan-step-content" style="display: none;">
+            <div class="fan-zone-header">
+                <h2>Fan Zone Community ❤️</h2>
+                <p id="welcomeUserMsg">Welcome to the community!</p>
+            </div>
+
+            <!-- Photo Downloads -->
+            <div class="fan-section">
+                <h3>📸 Exclusive Downloads</h3>
+                <div class="fan-gallery">
+                    <div class="fan-photo-card">
+                        <img src="image/Jisoo.jpg" alt="Jisoo">
+                        <a href="image/Jisoo.jpg" download="Jisoo.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Ariana.jpg" alt="Ariana Grande">
+                        <a href="image/Ariana.jpg" download="Ariana.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Dua Lipa.jpg" alt="Dua Lipa">
+                        <a href="image/Dua Lipa.jpg" download="Dua Lipa.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Jackie Chan.jpg" alt="Jackie Chan">
+                        <a href="image/Jackie Chan.jpg" download="Jackie Chan.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/jjk.jpg" alt="Jung Kook">
+                        <a href="image/jjk.jpg" download="jjk.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/lisa.jpg" alt="Lisa">
+                        <a href="image/lisa.jpg" download="lisa.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Robert Downey Jr.jpg" alt="Robert Downey Jr">
+                        <a href="image/Robert Downey Jr.jpg" download="Robert Downey Jr.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Rose.jpg" alt="Rose">
+                        <a href="image/Rose.jpg" download="Rose.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Ryan Reynolds.jpg" alt="Ryan Reynolds">
+                        <a href="image/Ryan Reynolds.jpg" download="Ryan Reynolds.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/taylor swift.jpg" alt="Taylor Swift">
+                        <a href="image/taylor swift.jpg" download="taylor swift.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Tom Holland.jpg" alt="Tom Holland">
+                        <a href="image/Tom Holland.jpg" download="Tom Holland.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Zendaya.jpg" alt="Zendaya">
+                        <a href="image/Zendaya.jpg" download="Zendaya.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Billie eilish.jpg" alt="Billie Eilish">
+                        <a href="image/Billie eilish.jpg" download="Billie eilish.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Cha Eun Woo.jpg" alt="Cha Eun woo">
+                        <a href="image/Cha Eun Woo.jpg" download="Cha Eun Woo.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Dwayne Johnson.jpg" alt="Dwayne Johnson">
+                        <a href="image/Dwayne Johnson.jpg" download="Dwayne Johnson.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Jennie.jpg" alt="Jennie">
+                        <a href="image/Jennie.jpg" download="Jennie.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Justin Bieber.jpg" alt="Justin Bieber">
+                        <a href="image/Justin Bieber.jpg" download="Justin Bieber.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/kim ji won.jpg" alt="Kim Ji Won">
+                        <a href="image/kim ji won.jpg" download="kim ji won.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/LeeDongwook.jpg" alt="Lee Dong Wook">
+                        <a href="image/LeeDongwook.jpg" download="LeeDongwook.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Leonardo DiCaprio.jpg" alt="Leonardo DiCaprio">
+                        <a href="image/Leonardo DiCaprio.jpg" download="Leonardo DiCaprio.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Margot Robbie.jpg" alt="Margot Robbie">
+                        <a href="image/Margot Robbie.jpg" download="Margot Robbie.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/sabrina carpenter.jpg" alt="Sabrina Carpenter">
+                        <a href="image/sabrina carpenter.jpg" download="sabrina carpenter.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Selena.jpg" alt="Selena Gomez">
+                        <a href="image/Selena.jpg" download="Selena.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                    <div class="fan-photo-card">
+                        <img src="image/Emma.jpg" alt="Emma Watson">
+                        <a href="image/Emma.jpg" download="Emma.jpg" target="_blank" class="download-btn">⬇️ Save Photo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat / Comments -->
+            <div class="fan-section">
+                <h3>💬 Fan Chat & Comments</h3>
+                <div id="chatBox" class="chat-box">
+                    <div class="chat-message">
+                        <strong>Su Su:</strong> Hi everyone! Welcome to the Fan Zone! 🎉
+                    </div>
+                    <div class="chat-message">
+                        <strong>Aung Aung:</strong> Thanks for sharing the photo wallpapers!
+                    </div>
+                </div>
+
+                <form id="fanChatForm" class="chat-form">
+                    <input type="text" id="fanComment" placeholder="Write a message..." required>
+                    <button type="submit">Send 🚀</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+ 
+    <script src="js/script.js"></script> 
+ 
+</body> 
+</html>
